@@ -8,6 +8,10 @@ RUN /home/gitpod/.deno/bin/deno completions bash > /home/gitpod/.bashrc.d/90-den
 
 echo "image:
   file: .gitpod.Dockerfile
+
+vscode:
+  extensions:
+    - denoland.vscode-deno@2.3.1:EQc/TzIQd+H8BcYsPXTo/A==
 " >> .gitpod.yml
 
 mkdir -p .vscode
@@ -20,8 +24,5 @@ echo "{
 " >> .vscode/extensions.json
 
 curl -fsSL https://deno.land/x/install/install.sh | sh
-/home/gitpod/.deno/bin/deno completions bash > /home/gitpod/.bashrc.d/90-deno
-echo 'export DENO_INSTALL=\"/home/gitpod/.deno\"' >> /home/gitpod/.bashrc.d/90-deno
-echo 'export PATH=\"\$DENO_INSTALL/bin:\$PATH\"' >> /home/gitpod/.bashrc.d/90-deno
 
-echo "\x1b[42mDone! \x1b[0m Restart gitpod or install the gitpod extension."
+echo "\033[42mDone!\] Restart gitpod."
