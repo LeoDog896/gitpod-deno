@@ -10,6 +10,8 @@ echo "image:
   file: .gitpod.Dockerfile
 " >> .gitpod.Dockerfile
 
+mkdir -p .vscode
+
 echo "{
   \"recommendations\": [
     \"denoland.vscode-deno\",
