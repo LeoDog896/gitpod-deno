@@ -8,7 +8,7 @@ RUN /home/gitpod/.deno/bin/deno completions bash > /home/gitpod/.bashrc.d/90-den
 
 echo "image:
   file: .gitpod.Dockerfile
-" >> .gitpod.Dockerfile
+" >> .gitpod.yml
 
 mkdir -p .vscode
 
