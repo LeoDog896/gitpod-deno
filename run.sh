@@ -11,7 +11,7 @@ echo "image:
 
 vscode:
   extensions:
-    - denoland.vscode-deno@2.3.1:EQc/TzIQd+H8BcYsPXTo/A==
+    - denoland.vscode-deno
 " >> .gitpod.yml
 
 mkdir -p .vscode
@@ -23,6 +23,4 @@ echo "{
 }
 " >> .vscode/extensions.json
 
-curl -fsSL https://deno.land/x/install/install.sh | sh
-
-echo "\033[42mDone!\] Restart gitpod."
+echo -e "\033[42mDone!\033[0m Restart gitpod."
