@@ -14,4 +14,4 @@ vscode:
     - denoland.vscode-deno
 " >> .gitpod.yml
 
-printf "\033[42mDone!\033[0m Restart gitpod.\n"
+printf "\033[42mDone!\033[0m Fully remove and restart gitpod, or rebuild: https://gitpod.io/#imagebuild/<your-repo-url>.\n"
