@@ -6,3 +6,11 @@ curl -fsSL https://raw.githubusercontent.com/LeoDog896/gitpod-deno/main/run.sh |
 ```
 
 Once running this, make sure to fully rebuild the docker image (after pushing your changes)
+
+## Standalone
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/LeoDog896/gitpod-deno/main/standalone.sh | sh
+```
+
+This adds deno to gitpod without a config file
